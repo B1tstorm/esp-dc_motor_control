@@ -1,3 +1,10 @@
+/**
+ * Author: Neythex
+ * Date: 16.07.2021
+ * Description: A small project for hot summerdays!
+ * Version: v1.0
+ * */
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -17,10 +24,10 @@
 #define LEDC_DUTY               (4095) // Set duty to 50%. ((2 ** 13) - 1) * 50% = 4095
 #define LEDC_FREQUENCY          (5000) // Frequency in Hertz. Set frequency at 5 kHz
 
-#define SPEED_MODE_0    ((pow(2.0, 13.0) - 1) * 0.0)
-#define SPEED_MODE_80    ((pow(2.0, 13.0) - 1) * 0.8)
-#define SPEED_MODE_90    ((pow(2.0, 13.0) - 1) * 0.9)
-#define SPEED_MODE_100      (8191)
+#define SPEED_MODE_0    ((pow(2.0, 13.0) - 1) * 0.0) // off
+#define SPEED_MODE_80    ((pow(2.0, 13.0) - 1) * 0.8) // 80%
+#define SPEED_MODE_90    ((pow(2.0, 13.0) - 1) * 0.9) // 90%
+#define SPEED_MODE_100      (8191) // 100% = (2 ** 13) - 1
 
 
 static void example_ledc_init(void)
